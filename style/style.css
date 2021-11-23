@@ -1593,7 +1593,7 @@ select {
 
     .process__helps__container {
         flex-direction: column;
-        width: auto;
+        width: initial;
     }
 
     .process__paragraph {
