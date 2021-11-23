@@ -1593,7 +1593,7 @@ select {
 
     .process__helps__container {
         flex-direction: column;
-        width: initial;
+        width: auto;
     }
 
     .process__paragraph {
@@ -1606,11 +1606,6 @@ select {
         flex-direction: column;
         justify-content: end;
         align-items: flex-end;
-    }
-    }
-
-    .helps__text {
-        width: -moz-available;
     }
 
     .slide {
