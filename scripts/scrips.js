@@ -12,3 +12,4 @@ points.forEach((currentPoint, index) => {
         items[index].classList.add("active");
     });
 });
+

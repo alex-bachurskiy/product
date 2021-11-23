@@ -171,11 +171,32 @@ select {
     height: 32px;
 }
 
+.header__nav {
+    position: absolute;
+    right: 36px;
+    display: block;
+}
+.header__menu {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__menu li {
+    list-style: none;
+    margin: 0px 0px 0px 36px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 /*MAIN*/
+
+.main {
+    margin-top: 50px;
+}
 
 .main__container {
     display: flex;
-    margin-top: 50px;
     align-items: center;
 }
 
@@ -204,6 +225,10 @@ select {
 .main-info__btn__container {
     display: flex;
     margin-top: 60px;
+}
+
+.main-info__mobile {
+    display: none;
 }
 
 .btn__start {
@@ -241,7 +266,7 @@ select {
 }
 
 .btn__video a::before {
-    content: url(./img/triangle.png);
+    content: url(../img/triangle.png);
     position: relative;
     margin-right: 9px;
     top: 4px;
@@ -252,7 +277,7 @@ select {
 .feature {
     margin-top: 114px;
     margin-bottom: 150px;
-    background-image: url(./img/background.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -345,6 +370,13 @@ select {
 }
 
 /*MANAGEMENT, SUPPORT, COLLABORATIVE*/
+
+.mobile__management__image,
+.mobile__support__image,
+.mobile__collaborative__image
+{
+    display: none;
+}
 
 .management,
 .collaborative,
@@ -449,7 +481,7 @@ select {
 }
 
 .support__article__list::before {
-    content: url(./img/path.png);
+    content: url(../img/path.png);
     border-radius: 14px;
     height: 35px;
     padding: 8px 9px 11px 10px;
@@ -486,7 +518,7 @@ select {
 /*PROCESS*/
 
 .process {
-    background-image: url(./img/background-reflection.png);
+    background-image: url(../img/background-reflection.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -577,6 +609,10 @@ select {
 
 /*STRATEGIES*/
 
+.strategies {
+    margin-bottom: 150px;
+}
+
 .strategies__container {
     color: #22343D;
 }
@@ -595,6 +631,10 @@ select {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+}
+
+.slide__info {
+    margin: 0 24px 37px;
 }
 
 .slide__info__paragraph {
@@ -625,15 +665,15 @@ select {
 
 /*STRATEGIES-SLIDER*/
 
-#active-slide {
-    width: 100%;
-    display: table;
-    position: relative;
+.slider__container {
     overflow: hidden;
     margin-bottom: 64px;
 }
 
 .slide{
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 8px;
     width: 348px;
     list-style: none;
     display: inline;
@@ -646,7 +686,6 @@ select {
 }
 
 .Radio-But{
-    margin-top: 10px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -655,7 +694,6 @@ select {
 }
 
 .Radio-But .ctrl-select {
-    margin:2px;
     display:inline-block;
     width:16px;
     height:16px;
@@ -723,11 +761,7 @@ select {
 }
 
 .prices__card:last-of-type {
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
     margin-right: 0;
-    height: 456px;
-    width: 322.65px;
 }
 
 .prices__card__title {
@@ -1048,4 +1082,524 @@ select {
     cursor: pointer;
 }
 
+/*@media screen*/
+
+@media screen and (max-width:1200px) {
+    
+    .container {
+        width: 960px;
+    }
+
+    .header__container {
+        width: inherit;
+    }
+
+    .header__logo__container {
+        margin-right: auto;
+    }
+
+    .header__menu li {
+        margin: 0px 0px 0px 15px;
+    }
+
+    .btn__video {
+        width: auto;
+    }
+
+    .main-image img{
+        width: 100%;
+    }
+
+    .feature__container {
+        width: auto;
+    }
+
+    .feature, .management,
+    .support, .collaborative,
+    .process, .strategies,
+    .price, .clients-say,
+    .baner, .footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .feature__cards__container {
+        width: auto;
+    }
+
+    .management__image img, 
+    .support__image img, 
+    .collaborative__image img {
+        width: 90%;
+    }
+
+    .management__image, 
+    .collaborative__image {
+        margin-left: 40px;
+    }
+
+    .support__image {
+        margin-right: 40px;
+    }
+
+    .strategies__title__container {
+        text-align: center;
+    }
+
+    .slide {
+        margin-right: 25px;
+        width: min-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide__info__title {
+        width: 220px;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    .prices__card {
+        color: #22343D;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin-right: 70px;
+        height: 456px;
+        width: 250px;
+    }
+
+    .reviews {
+        width: 265px;
+    }
+
+    .banner__container {
+        width: auto;
+    }
+
+    .banner__content {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .banner__content__button {
+        margin-bottom: 25px;
+    }
+    
+    .footer__logo__container {
+        margin-right: 50px;
+    }
+
+    .resourse__container {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .container {
+        width: 720px;
+    }
+
+    .header__container {
+        justify-content: space-between;
+        width: inherit;
+    }
+
+    .header__menu__container {
+        display: none;
+    }
+
+    .dark-theme {
+        margin-left: 25px;
+    }
+
+    .btn__sign-out {
+        margin-right: 0;
+    }
+    
+    .card {
+        width: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn__feature {
+        margin-bottom: 55px;
+    }
+
+    .helps__box {
+        width: auto;
+    }
+
+    .left__helps {
+        margin-right: 50px;
+    }
+
+    .right__helps .helps__box:nth-of-type(1) .helps__text {
+        order: 2;
+    }
+
+    .left__helps .helps__box:nth-of-type(1) .helps__text {
+        order: unset;
+    }
+
+    .slide__info {
+        margin: 0;
+        text-align: center;
+        width: 220px;
+    }
+
+    .slide__info__paragraph {
+        font-size: 14px;
+    }
+
+    .slide__info__title {
+        font-size: 21px;
+        width: auto;
+    }
+
+    .prices__card {
+        margin-right: 30px;
+        width: 210px;
+    }
+
+    .reviews {
+        padding: 20px 15px;
+        width: 195px;
+    }
+
+    .banner__content__info {
+        font-size: 30px;
+        line-height: 145%;
+        width: auto;
+    }
+
+    .banner__content__button {
+        margin-top: 55px;
+    }
+
+    .footer .container {
+        justify-content: flex-start;
+    }
+
+    .footer__container {
+        width: auto;
+    }
+
+    .footer__logo__container {
+        margin-right: 30px;
+    }
+
+    .footer__menu__container {
+        margin-right: 40px;
+    }
+
+    .resourse__container {
+        margin-right: 35px;
+    }
+
+    .footer__forms__container {
+        width: min-content;
+    }
+
+    .footer__forms__title {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .footer-form__input {
+        width: 235px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        width: auto;
+    }
+
+    .main__container {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .main-info__btn__container {
+        display: none;
+    }
+
+    .main-info__mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-info {
+        margin-bottom: 25px;
+    }
+
+    .main-info__paragraph,
+    .main-info__title {
+        text-align: center;
+        width: 600px;
+    }
+
+    .main-image {
+        margin-bottom: 35px;
+    }
+
+    .mobile__management__image,
+    .mobile__support__image,
+    .mobile__collaborative__image {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .management__container,
+    .support-container,
+    .collaborative__container {
+        justify-content: center;
+    }
+
+    .management__information, 
+    .support__article, 
+    .collaborative__information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .management__image,
+    .collaborative__image,
+    .support__image
+    {
+        display: none;
+    }
+
+    .management__article__paragraph, 
+    .support__article__paragraph, 
+    .collaborative__article__paragraph,
+    .management__article__title, 
+    .support__article__title, 
+    .collaborative__article__title {
+        text-align: center;
+    }
+
+    .process__helps__container {
+        width: 735px;
+    }
+
+    .footer__container {
+        margin: 0 auto;
+    }
+
+    .footer-form__input {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:576px) {
+  
+    .container {
+        width: 90%;
+    }
+
+    .header__btn__container {
+        display: none;
+    }
+
+    .main-info__paragraph, .main-info__title {
+        width: auto;
+    }
+
+    .main-image img {
+        width: 50%;
+    }
+
+    .main-info__mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature__title {
+        font-size: 30px;
+        width: auto;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .feature__cards__container {
+        margin-bottom: 45px;
+    }
+    
+    .mobile__management__image img, 
+    .mobile__support__image img, 
+    .mobile__collaborative__image img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .management__information, 
+    .support__article, 
+    .collaborative__information {
+        width: auto;
+    }
+
+    .support__article__list:nth-child(1) {
+        width: unset;
+    }
+
+    .support__article__list {
+        width: auto;
+    }
+
+    .process__helps__container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .process__paragraph {
+        width: auto;
+    }
+
+    .left__helps {
+        margin: 0 0 60px;
+    }
+
+    .helps__text {
+        width: -moz-available;
+    }
+
+    .slide {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #slider-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .Radio-But {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    .Radio-But .ctrl-select {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    .prices__card__container {
+        flex-direction: column;
+    }
+
+    .prices__card {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .prices__card:nth-of-type(3) {
+        margin-bottom: 0;
+    }
+
+    .reviews__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    
+    .reviews:nth-of-type(3) {
+        margin-bottom: 0;
+    }
+
+    .clients-say__information__paragraph {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .banner__container {
+        flex-direction: column;
+    }
+
+    .banner__content {
+        margin: 25px 10px 0;
+        text-align: center;
+    }
+
+    .banner__content__button {
+        margin: 10px auto 0;
+    }
+
+    .banner__image img {
+        width: 100%;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__menu__container,
+    .footer__logo__container {
+        margin-right: 0;
+    }
+
+    .footer__menu__container {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .footer__forms__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-form__submit {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    
+}
 
