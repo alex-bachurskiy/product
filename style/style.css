@@ -213,7 +213,7 @@ select {
 	display: none;
 	cursor: pointer;
 	z-index: 10200;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .mobile_menu_container{
@@ -1602,6 +1602,11 @@ select {
 
     .left__helps {
         margin: 0 0 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+    }
     }
 
     .helps__text {
