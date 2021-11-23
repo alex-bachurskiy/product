@@ -1694,6 +1694,13 @@ select {
         align-items: center;
     }
 
+    .footer__logo {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .footer__logo__container {
         display: flex;
         flex-direction: column;
